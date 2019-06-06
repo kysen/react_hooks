@@ -8,7 +8,6 @@ const RandomColor = () => {
   const handleSubmit = event => {
     event.preventDefault();
     const rand = Math.floor(Math.random() * 16777215);
-    console.log(`#${rand.toString()}`);
     setColor(`#${rand.toString(16)}`);
   };
 

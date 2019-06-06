@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Sum = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = React.useState(0);
   return (
     <div>
-      <h2>{count.toString(16)}</h2>
+      <h2>{count}</h2>
       <button onClick={() => setCount(count - 1)}>SUB</button>
       <button onClick={() => setCount(count + 1)}>ADD</button>
     </div>

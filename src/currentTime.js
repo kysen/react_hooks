@@ -6,7 +6,7 @@ const CurTime = () => {
   useEffect(() => {
     let interval = setInterval(() => tick(), 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, [time]);
 
   const tick = () => {
     setTime(new Date());
